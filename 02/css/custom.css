@@ -6,22 +6,25 @@ ul#flex-container {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  display: flex; /* Display a flexible container */
+  display: flex; /* Display a flexible container. */
+  flex-direction: row; /* Direction of the container. Raw is the standard, don't need to specify. */
+  flex-wrap: wrap; /* Wraps the content according to the width of it and to the wiewport. */
 }
 
 ul li {
-  height: 150px;
-  padding-top: 45px;
+  width: 300px;
+  height: 300px;
+  padding-top: 120px;
   color: #fff;
   font-weight: bold;
   font-size: 2.2em;
   text-align: center;
-  flex-grow: 1; /* Give ratio of 1 to every element of the flexbox */
+  flex-grow: 1; /* Give ratio of 1 to every element of the flexbox. */
 }
 
 ul li:first-child {background: #c2d775;}
 ul li:nth-child(2) {background: #007278;}
-ul li:nth-child(3) {background: #c7b600; flex-grow: 2;}
-ul li:nth-child(4) {background: #a90020; flex-grow: 2;}
+ul li:nth-child(3) {background: #c7b600;}
+ul li:nth-child(4) {background: #a90020;}
 ul li:nth-child(5) {background: #00a378;}
 ul li:last-child {background: #00ea72;}
