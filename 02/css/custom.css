@@ -3,16 +3,19 @@ html, body {
 }
 
 ul#flex-container {
+  height: 600px;
   list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex; /* Display a flexible container. */
   flex-direction: row; /* Direction of the container. Raw is the standard, don't need to specify. */
   flex-wrap: wrap; /* Wraps the content according to the width of it and to the wiewport. */
+  align-items: baseline;
+
 }
 
 ul li {
-  width: 300px;
+  width: 100px;
   height: 300px;
   padding-top: 120px;
   color: #fff;
@@ -22,9 +25,9 @@ ul li {
   flex-grow: 1; /* Give ratio of 1 to every element of the flexbox. */
 }
 
-ul li:first-child {background: #c2d775;}
+ul li:first-child {background: #c2d775; align-self: flex-end;} /* Ignore 'align-items' defined in the container. */
 ul li:nth-child(2) {background: #007278;}
-ul li:nth-child(3) {background: #c7b600;}
+ul li:nth-child(3) {background: #c7b600; align-self: flex-end;}
 ul li:nth-child(4) {background: #a90020;}
-ul li:nth-child(5) {background: #00a378;}
+ul li:nth-child(5) {background: #00a378; align-self: flex-end;}
 ul li:last-child {background: #00ea72;}
