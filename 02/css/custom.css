@@ -6,6 +6,7 @@ ul#flex-container {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  display: flex; /* Display a flexible container */
 }
 
 ul li {
@@ -15,11 +16,12 @@ ul li {
   font-weight: bold;
   font-size: 2.2em;
   text-align: center;
+  flex-grow: 1; /* Give ratio of 1 to every element of the flexbox */
 }
 
 ul li:first-child {background: #c2d775;}
 ul li:nth-child(2) {background: #007278;}
-ul li:nth-child(3) {background: #c7b600;}
-ul li:nth-child(4) {background: #a90020;}
+ul li:nth-child(3) {background: #c7b600; flex-grow: 2;}
+ul li:nth-child(4) {background: #a90020; flex-grow: 2;}
 ul li:nth-child(5) {background: #00a378;}
 ul li:last-child {background: #00ea72;}
