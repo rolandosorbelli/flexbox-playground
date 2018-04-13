@@ -30,4 +30,5 @@ ul li:nth-child(2) {background: #007278;}
 ul li:nth-child(3) {background: #c7b600; align-self: flex-end;}
 ul li:nth-child(4) {background: #a90020;}
 ul li:nth-child(5) {background: #00a378; align-self: flex-end;}
-ul li:last-child {background: #00ea72;}
+ul li:nth-child(6) {background: #00ea72;}
+ul li:last-child {background: #007299; align-self: flex-end;}
